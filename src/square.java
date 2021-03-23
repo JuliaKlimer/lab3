@@ -16,7 +16,7 @@ public class square extends figure implements saveto{
         return this.side * this.side;
     }
     @Override
-    public boolean savetofile(){
+    public boolean saveToFile(){
         try {
             File fw = new File("D:\\for squares.txt");
             Desktop dt = Desktop.getDesktop();
@@ -30,7 +30,7 @@ public class square extends figure implements saveto{
         return true;
     }
     @Override
-    public boolean outputtoconsole(){
+    public boolean outputToConsole(){
         try {
             System.out.println(this.toString());
         }

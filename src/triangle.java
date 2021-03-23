@@ -14,12 +14,12 @@ public class triangle extends figure implements saveto{
     public String toString(){
         return "Triangle: " + side + ", " + side1 + ", " + side2 + ", " + "(" + x0 + "," + y0 + ")";
     }
-    public int heronformula() {
+    public int heronFormula() {
         int hp = (this.side + this.side1 + this.side2)/2;
         return (int) Math.sqrt(hp*(hp-this.side)*(hp-this.side1)*(hp-this.side2));
     }
     @Override
-    public boolean savetofile(){
+    public boolean saveToFile(){
         try {
             File fw = new File("D:\\for triangles.txt");
             Desktop dt = Desktop.getDesktop();
@@ -33,7 +33,7 @@ public class triangle extends figure implements saveto{
         return true;
     }
     @Override
-    public boolean outputtoconsole(){
+    public boolean outputToConsole(){
         try {
             System.out.println(this.toString());
         }

@@ -9,18 +9,18 @@ public class figure {
     int side2;
     int x0;
     int y0;
-    public ArrayList<figure> figurearray;{}
-    public figure() {figurearray = new ArrayList<>();}
-    public void addfigure (figure f){
-        figurearray.add(f);
+    public ArrayList<figure> figureArray;{}
+    public figure() {figureArray = new ArrayList<>();}
+    public void addFigure (figure f){
+        figureArray.add(f);
     }
-    public boolean savearraytofile(){
+    public boolean saveArrayToFile(){
         try {
             File fw = new File("D:\\input.txt");
             Desktop dt = Desktop.getDesktop();
             dt.open(fw);
             PrintWriter pw = new PrintWriter(fw);
-            for (figure f : this.figurearray) {
+            for (figure f : this.figureArray) {
                 if (f != null) pw.println(f.toString());
             }
             pw.flush();

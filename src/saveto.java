@@ -1,4 +1,4 @@
 public interface saveto {
-    boolean savetofile();
-    boolean outputtoconsole();
+    boolean saveToFile();
+    boolean outputToConsole();
 }
